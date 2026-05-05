@@ -2,58 +2,35 @@
 <html lang="en">
 <head>
     <style>
-        :root {
-            --primary: #fdf6f0; /* Cream background */
-            --accent: #d4a373;   /* Muted gold/tan */
-            --text: #4a4a4a;
-            --white: #ffffff;
-        }
+        :root { --primary: #fdf6f0; --accent: #d4a373; --text: #4a4a4a; --white: #ffffff; }
         body { font-family: 'Georgia', serif; background-color: var(--primary); color: var(--text); margin: 0; }
-        
-        /* Header & Hero */
         header { padding: 40px; text-align: center; background: var(--white); }
         .hero { height: 400px; display: flex; align-items: center; justify-content: center; 
                 flex-direction: column; background: #e9edc9; margin: 20px; border-radius: 15px; }
-        
-        /* Subscription Section */
+        .btn { background: var(--text); color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; }
         .sub-box { background: var(--accent); color: white; padding: 40px; text-align: center; margin: 40px 20px; border-radius: 15px; }
-        .sub-box input { padding: 10px; border-radius: 5px; border: none; width: 250px; }
-        .btn { background: var(--text); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
-
-        /* Product Slots */
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 40px; }
-        .slot { background: var(--white); height: 350px; border-radius: 10px; display: flex; 
-                align-items: center; justify-content: center; border: 2px dashed #ccc; flex-direction: column; }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Your Brand Name</h1>
+        <p>Curation for the Aesthetic Soul</p>
+    </header>
 
-<header>
-    <h1>ETHEREAL ANN
+    <section class="hero">
+        <h2>The June Collection</h2>
+        <p>A touch of magic, delivered monthly.</p>
+        <!-- I SANDWICHED THE BUTTON BELOW FOR YOU -->
+        <a href="themes.html">
+            <button class="btn">View Themes</button>
+        </a>
+    </section>
 
-    <p>A monthly box is good for your soul</p>
-</header>
-
-<section class="hero">
-    <h2>The Wellness Collection</h2>
-    <p>A touch of magic, delivered monthly.</p>
-    <button class="btn">View Themes</button>
-</section>
-
-<section class="product-grid">
-    <!-- Edit these slots with your product names! -->
-    <div class="slot"><span>[Add Product Photo]</span><p>Hero Item Name</p></div>
-    <div class="slot"><span>[Add Product Photo]</span><p>Supporting Item 1</p></div>
-    <div class="slot"><span>[Add Product Photo]</span><p>Supporting Item 2</p></div>
-</section>
-
-<section class="sub-box">
-    <h3>Join the Inner Circle</h3>
-    <p>Subscribe for $25/month and never miss a box.</p>
-    <input type="email" placeholder="Enter your email...">
-    <button class="btn">Subscribe Now</button>
-</section>
-
+    <section class="sub-box">
+        <h3>Join the Inner Circle</h3>
+        <input type="email" placeholder="Enter your email...">
+        <button class="btn">Subscribe Now</button>
+    </section>
 </body>
 </html>
 
